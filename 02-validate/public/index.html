@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module">
+      import './glue.js';
+      import { refreshShopList, bindShopInfoEvents } from './index.js';
+
+      async function bootstrap() {
+        await refreshShopList();
+        await bindShopInfoEvents();
+      }
+
+      bootstrap();
+    </script>
+  </body>
+</html>
