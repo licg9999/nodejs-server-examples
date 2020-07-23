@@ -1,5 +1,5 @@
 {
-  "name": "02-validate",
+  "name": "03-middleware",
   "version": "1.0.0",
   "scripts": {
     "start": "node src/server.js",
