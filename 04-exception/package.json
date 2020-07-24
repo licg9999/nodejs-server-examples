@@ -1,0 +1,20 @@
+{
+  "name": "04-exception",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js",
+    "build:yup": "rollup node_modules/yup -o src/moulds/yup.js -p @rollup/plugin-node-resolve,@rollup/plugin-commonjs,rollup-plugin-terser -f umd -n 'yup'"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.22.2",
+    "rollup-plugin-terser": "^6.1.0"
+  }
+}
