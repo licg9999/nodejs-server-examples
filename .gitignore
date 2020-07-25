@@ -1,3 +1,4 @@
+# Mac desktop server store
 .DS_Store
 
 # Logs
@@ -116,3 +117,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Database files
+**/database/**/*
+
+# Should track all .gitkeep files to keep dirs
+!.gitkeep
