@@ -1,5 +1,4 @@
 const { Router } = require('express');
-const cc = require('../utils/cc');
 
 class LoginController {
   async init() {
@@ -8,10 +7,10 @@ class LoginController {
     return router;
   }
 
-  post = cc((req, res) => {
+  post = (req, res) => {
     req.session.logined = true;
     res.redirect('/');
-  });
+  };
 }
 
 module.exports = async () => {
