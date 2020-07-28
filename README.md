@@ -13,3 +13,5 @@
 [从零搭建 Node.js 企业级 Web 服务器（五）：数据库访问](https://segmentfault.com/a/1190000023375620)
 
 [从零搭建 Node.js 企业级 Web 服务器（六）：会话](https://segmentfault.com/a/1190000023388061)
+
+[从零搭建 Node.js 企业级 Web 服务器（七）：认证登录](https://segmentfault.com/a/1190000023410877)
