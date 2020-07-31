@@ -1,0 +1,41 @@
+{
+  "name": "10-log",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node -r ./scripts/env src/server.js",
+    "start:prod": "cross-env NODE_ENV=production node -r ./scripts/env src/server.js",
+    "sequelize": "sequelize",
+    "sequelize:prod": "cross-env NODE_ENV=production sequelize",
+    "build:yup": "rollup node_modules/yup -o src/moulds/yup.js -p @rollup/plugin-node-resolve,@rollup/plugin-commonjs,rollup-plugin-terser -f umd -n 'yup'"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bunyan": "^1.8.14",
+    "connect-session-sequelize": "^6.1.1",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.2",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "escape-html": "^1.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "lodash.merge": "^4.6.2",
+    "morgan": "^1.10.0",
+    "on-finished": "^2.3.0",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "sequelize": "^5.22.3",
+    "sqlite3": "^5.0.0",
+    "uuid": "^8.3.0",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.22.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}

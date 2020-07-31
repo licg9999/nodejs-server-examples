@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="/api/csrf/script"></script>
+  </head>
+  <body>
+    <form method="post" action="/api/login">
+      <script>
+        document.write(
+          `<input type="hidden" name="_csrf" value="${__CSRF_TOKEN__}" />`
+        );
+      </script>
+      <button type="submit">一键登录</button>
+    </form>
+    <a href="/api/login/github"><button>Github 登录</button></a>
+  </body>
+</html>
