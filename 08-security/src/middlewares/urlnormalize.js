@@ -3,7 +3,8 @@ const { parse, format } = require('url');
 
 module.exports = function urlnormalizeMiddleware() {
   return (req, res, next) => {
-    const pathname = normalize(req.path);
+    // 解决windows、Linux系统使用normalize路径分隔符不一致的问题
+    const pathname = normalize(req.path).split('\\').join('/');
     const urlParsed = parse(req.url);
 
     let shouldRedirect = false;
