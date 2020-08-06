@@ -119,3 +119,6 @@ dist
 
 # Should track all .gitkeep files to keep dirs
 !.gitkeep
+
+# 0x generated profiles
+*.0x/
