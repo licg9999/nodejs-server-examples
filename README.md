@@ -27,3 +27,5 @@
 [从零搭建 Node.js 企业级 Web 服务器（十二）：远程调用](https://segmentfault.com/a/1190000023495075)
 
 [从零搭建 Node.js 企业级 Web 服务器（十三）：断点调试与性能分析](https://segmentfault.com/a/1190000023520714)
+
+[从零搭建 Node.js 企业级 Web 服务器（十四）：自动化测试](https://segmentfault.com/a/1190000023648009)
